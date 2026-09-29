@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./image/ChatGPT Image Aug 8, 2026, 09_55_19 AM.png"
+    />
+    <title>
+      Movie Tickets, Plays, Sports, Evens & Cinemas near Chennai - BookMyShow
+      Chennai.
+    </title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css"
+    />
+
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navtop">
+        <div class="logo">
+          <img src="./image/book_my_show.png" alt="logo" />
+        </div>
+        <div class="placeholder">
+          <div class="place">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              placeholder="Search for Movies, Events, Plays, Sports and Activities"
+            />
+          </div>
+        </div>
+        <div class="location">
+          <span id="locationText">Location</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <div class="location-overlay" id="locationOverlay"></div>
+
+        <div class="location-popup" id="locationPopup">
+          <div class="placecity">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for your city" />
+          </div>
+          <div class="detect">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>Detect my location</p>
+          </div>
+          <p class="popular1">Popular Cities</p>
+          <div class="popular-city">
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/mumbai.png"
+                alt=""
+              />
+              <p>Mumbai</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/ncr.png"
+                alt=""
+              />
+              <p>Delhi-NCR</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/bang.png"
+                alt=""
+              />
+              <p>Bengaluru</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/hyd.png"
+                alt=""
+              />
+              <p>Hyderabad</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/chd.png"
+                alt=""
+              />
+              <p>Chandigarh</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/ahd.png"
+                alt=""
+              />
+              <p>Ahmedabad</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/pune.png"
+                alt=""
+              />
+              <p>Pune</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/chen-selected.png"
+                alt=""
+              />
+              <p>chennai</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/kolk.png"
+                alt=""
+              />
+              <p>Kolkata</p>
+            </div>
+            <div class="cities">
+              <img
+                src="https://assets-in.bmscdn.com/m6/images/common-modules/regions/koch.png"
+                alt=""
+              />
+              <p>Kochi</p>
+            </div>
+          </div>
+        </div>
+        <div class="signin">
+          <button class="sign-in">Sign in</button>
+        </div>
+        <div class="handburger">
+          <div class="hand-burger">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="option">
+             <header class="profile-header">
+      <div>
+        <h1>Hey!</h1>
+        <a href="#" class="edit-profile">Edit Profile &gt;</a>
+      </div>
+
+      <div class="avatar"></div>
+    </header>
+
+    <!-- Scrollable Menu -->
+    <div class="menu-scroll">
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">♧</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Notifications</div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item highlight">
+        <div class="menu-icon">♧</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Your Orders</div>
+          <div class="menu-description">
+            View all your bookings &amp; purchases
+          </div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">♡</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Your Wishlist</div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">▣</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Stream Library</div>
+          <div class="menu-description">
+            Rented &amp; Purchased Movies
+          </div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">₹</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Play Credit Card</div>
+          <div class="menu-description">
+            View your Play Credit Card details and offers
+          </div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">☵</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Help &amp; Support</div>
+          <div class="menu-description">
+            View commonly asked queries and Chat
+          </div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">⚙</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Accounts &amp; Settings</div>
+          <div class="menu-description">
+            Location, Payments, Permissions &amp; More
+          </div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">♔</div>
+
+        <div class="menu-content">
+          <div class="menu-title">Rewards</div>
+          <div class="menu-description">
+            View your rewards &amp; unlock new ones
+          </div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+
+      <a href="#" class="menu-item">
+        <div class="menu-icon">✥</div>
+
+        <div class="menu-content">
+          <div class="menu-title">BookAChange</div>
+        </div>
+
+        <div class="menu-arrow">›</div>
+      </a>
+
+    </div>
+
+    <!-- Bottom Sign Out -->
+    <footer class="footer">
+      <button class="signout" type="button">Sign out</button>
+    </footer>
+
+          </div>
+        </div>
+      </div>
+      <div class="navbottom">
+        <div class="first">
+            <span class="catgory">
+                <div class="moviespage">Movies</div>
+            </span>
+            <span class="catgory">
+                <div class="streampage" href="#">Stream</div>
+            </span>
+            <span class="catgory" >
+                <div class="eventspage">Events</div>
+            </span>
+            <span class="catgory">
+                <div class="catgorypage">Plays</div>
+            </span>
+            <span class="catgory">
+                <div class="sportpage">Sports</div>
+            </span>
+            <span class="catgory">
+                <div class="activitiespage">Activities</div>
+            </span>
+        </div>
+        <div class="second">
+            <span class="catgory">
+                <a href="#">ListYourShow</a>
+            </span>
+            <span class="catgory">
+                <a href="#">Corporates</a>
+            </span>
+            <span class="catgory">
+                <a href="#">Offers</a>
+            </span>
+            <span class="catgory">
+                <a href="#">Gift Cards</a>
+            </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- <-----------main-----------------> 
+    <div id="root"></div>
+
+      <footer class="bm-footer" role="contentinfo">
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" aria-label="List your show">
+      <div class="container cta-inner">
+        <div class="cta-brand">
+          <i class="fa-solid fa-building-columns"></i>
+          <div>
+            <h3>List your Show</h3>
+            <p>Got a show, event, activity or a great experience? Partner with us &amp; get listed on BookMyShow</p>
+          </div>
+        </div>
+        <a href="#" class="cta-btn">Contact today!</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features container" aria-label="Services">
+      <div class="feature-item">
+        <i class="fa-solid fa-headset"></i>
+        <span>24/7 CUSTOMER CARE</span>
+      </div>
+      <div class="feature-item">
+        <i class="fa-solid fa-ticket"></i>
+        <span>RESEND BOOKING CONFIRMATION</span>
+      </div>
+      <div class="feature-item">
+        <i class="fa-regular fa-envelope"></i>
+        <span>SUBSCRIBE TO THE NEWSLETTER</span>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- Section: Movies Now Showing -->
+      <section class="link-section" aria-label="Movies now showing in Chennai">
+        <h4>MOVIES NOW SHOWING IN CHENNAI</h4>
+        <div class="link-list">
+          <a href="#">Spider-Man: Brand New Day</a> <span class="divider-pipe">|</span>
+          <a href="#">DC</a> <span class="divider-pipe">|</span>
+          <a href="#">Jana Nayagan</a> <span class="divider-pipe">|</span>
+          <a href="#">GDN</a> <span class="divider-pipe">|</span>
+          <a href="#">The Odyssey</a> <span class="divider-pipe">|</span>
+          <a href="#">Korean Kanakaraju</a> <span class="divider-pipe">|</span>
+          <a href="#">Thudakkam</a> <span class="divider-pipe">|</span>
+          <a href="#">Photographer</a> <span class="divider-pipe">|</span>
+          <a href="#">Anbe Diana</a> <span class="divider-pipe">|</span>
+          <a href="#">Idhayam Murali</a>
+        </div>
+      </section>
+
+      <!-- Upcoming -->
+      <section class="link-section" aria-label="Upcoming movies">
+        <h4>UPCOMING MOVIES PER WEEK</h4>
+        <div class="link-list">
+          <a href="#">Upcoming Movies Today</a> <span class="divider-pipe">|</span>
+          <a href="#">Upcoming Movies Tomorrow</a> <span class="divider-pipe">|</span>
+          <a href="#">Upcoming Movies This Weekend</a>
+        </div>
+      </section>
+
+      <!-- By Genre -->
+      <section class="link-section" aria-label="Movies by genre">
+        <h4>MOVIES BY GENRE</h4>
+        <div class="link-list">
+          <a href="#">Drama Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Adventure Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Comedy Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Romantic Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Action Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Fantasy Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Thriller Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Family Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Horror Movies</a> <span class="divider-pipe">|</span>
+          <a href="#">Crime Movies</a>
+        </div>
+      </section>
+
+      <!-- By Language -->
+      <section class="link-section" aria-label="Movies by language">
+        <h4>MOVIES BY LANGUAGE</h4>
+        <div class="link-list">
+          <a href="#">Movies in Tamil</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in English</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Telugu</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Hindi</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Kannada</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Sindhi</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Bengali</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Flemish</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in Chattisgarhi</a> <span class="divider-pipe">|</span>
+          <a href="#">Movies in French</a>
+        </div>
+      </section>
+
+      <!-- Sports Events -->
+      <section class="link-section" aria-label="Sports events in Chennai">
+        <h4>SPORTS EVENTS IN CHENNAI</h4>
+        <div class="link-list">
+          <a href="#">Running</a> <span class="divider-pipe">|</span>
+          <a href="#">Bowling</a> <span class="divider-pipe">|</span>
+          <a href="#">Mixed Martial Arts</a> <span class="divider-pipe">|</span>
+          <a href="#">Basketball</a> <span class="divider-pipe">|</span>
+          <a href="#">Cricket</a> <span class="divider-pipe">|</span>
+          <a href="#">Horse Race</a> <span class="divider-pipe">|</span>
+          <a href="#">Sailing</a> <span class="divider-pipe">|</span>
+          <a href="#">Chess</a> <span class="divider-pipe">|</span>
+          <a href="#">Cycling</a> <span class="divider-pipe">|</span>
+          <a href="#">E Sports</a>
+        </div>
+      </section>
+
+      <!-- Events in Top Cities -->
+      <section class="link-section" aria-label="Events in top cities">
+        <h4>EVENTS IN TOP CITIES</h4>
+        <div class="link-list">
+          <a href="#">Events in Mumbai</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Delhi-NCR</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Chennai</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Bengaluru</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Hyderabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Pune</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Ahmedabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Kolkata</a> <span class="divider-pipe">|</span>
+          <a href="#">Events in Kochi</a>
+        </div>
+      </section>
+
+      <!-- Cinemas -->
+      <section class="link-section" aria-label="Cinemas in top cities">
+        <h4>CINEMAS IN TOP CITIES</h4>
+        <div class="link-list">
+          <a href="#">Cinemas in Mumbai</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Delhi-NCR</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Chennai</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Bengaluru</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Hyderabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Pune</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Ahmedabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Kolkata</a> <span class="divider-pipe">|</span>
+          <a href="#">Cinemas in Kochi</a>
+        </div>
+      </section>
+
+      <!-- Plays -->
+      <section class="link-section" aria-label="Plays in top cities">
+        <h4>PLAYS IN TOP CITIES</h4>
+        <div class="link-list">
+          <a href="#">Plays in Mumbai</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Delhi-NCR</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Chennai</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Bengaluru</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Hyderabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Pune</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Ahmedabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Kolkata</a> <span class="divider-pipe">|</span>
+          <a href="#">Plays in Kochi</a>
+        </div>
+      </section>
+
+      <!-- Activities -->
+      <section class="link-section" aria-label="Activities in top cities">
+        <h4>ACTIVITIES IN TOP CITIES</h4>
+        <div class="link-list">
+          <a href="#">Activities in Mumbai</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Delhi-NCR</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Chennai</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Bengaluru</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Hyderabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Pune</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Ahmedabad</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Kolkata</a> <span class="divider-pipe">|</span>
+          <a href="#">Activities in Kochi</a>
+        </div>
+      </section>
+
+      <!-- Movies Now Showing (second group) -->
+      <section class="link-section" aria-label="Movies now showing">
+        <h4>MOVIES NOW SHOWING</h4>
+        <div class="link-list">
+          <a href="#">Spider-Man: Brand New Day</a> <span class="divider-pipe">|</span>
+          <a href="#">Korean Kanakaraju</a> <span class="divider-pipe">|</span>
+          <a href="#">DC</a> <span class="divider-pipe">|</span>
+          <a href="#">Ayogya 2</a> <span class="divider-pipe">|</span>
+          <a href="#">Get Set Go</a> <span class="divider-pipe">|</span>
+          <a href="#">Jana Nayagan</a> <span class="divider-pipe">|</span>
+          <a href="#">Dhamaal 4</a> <span class="divider-pipe">|</span>
+          <a href="#">GDN</a> <span class="divider-pipe">|</span>
+          <a href="#">The Odyssey</a> <span class="divider-pipe">|</span>
+          <a href="#">Ohh My Dog</a>
+        </div>
+      </section>
+
+      <!-- Countries -->
+      <section class="link-section" aria-label="Countries">
+        <h4>COUNTRIES</h4>
+        <div class="link-list">
+          <a href="#">Indonesia</a> <span class="divider-pipe">|</span>
+          <a href="#">Singapore</a> <span class="divider-pipe">|</span>
+          <a href="#">Sri Lanka</a> <span class="divider-pipe">|</span>
+          <a href="#">West Indies</a>
+        </div>
+      </section>
+
+      <!-- Help -->
+      <section class="link-section" aria-label="Help">
+        <h4>HELP</h4>
+        <div class="link-list">
+          <a href="#">About Us</a> <span class="divider-pipe">|</span>
+          <a href="#">Contact Us</a> <span class="divider-pipe">|</span>
+          <a href="#">Current Opening</a> <span class="divider-pipe">|</span>
+          <a href="#">Press Release</a> <span class="divider-pipe">|</span>
+          <a href="#">Press Coverage</a> <span class="divider-pipe">|</span>
+          <a href="#">FAQs</a> <span class="divider-pipe">|</span>
+          <a href="#">Terms and Conditions</a> <span class="divider-pipe">|</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </section>
+
+      <!-- BookMyShow Exclusives -->
+      <section class="link-section" aria-label="BookMyShow exclusives">
+        <h4>BOOKMYSHOW EXCLUSIVES</h4>
+        <div class="link-list">
+          <a href="#">Lollapalooza India</a> <span class="divider-pipe">|</span>
+          <a href="#">BookAChange</a> <span class="divider-pipe">|</span>
+          <a href="#">Corporate Vouchers</a> <span class="divider-pipe">|</span>
+          <a href="#">Gift Cards</a> <span class="divider-pipe">|</span>
+          <a href="#">List My Show</a> <span class="divider-pipe">|</span>
+          <a href="#">Offers</a> <span class="divider-pipe">|</span>
+          <a href="#">Stream</a> <span class="divider-pipe">|</span>
+          <a href="#">Trailers</a>
+        </div>
+      </section>
+
+      <!-- Brand -->
+      <div class="bottom-brand">
+        <div class="logo-text">book <span>my</span> show</div>
+      </div>
+
+      <!-- Socials -->
+      <div class="socials" aria-label="Social media">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>Copyright © 2026 ©Bigtree Entertainment Pvt. Ltd. All Rights Reserved.</p>
+        <p>The content and images used on this site are copyright protected and copyrights vests with the owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.</p>
+      </div>
+
+    </div>
+
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInput.min.js"></script>
+    <script src="./javascripts.js"></script>
+  </body>
+</html>
