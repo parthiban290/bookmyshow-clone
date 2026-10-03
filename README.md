@@ -70,7 +70,8 @@ Development Tools
 - VS Code
 - Postman
 
-🏗️ Project Architecture
+#🏗️ Project Architecture
+```
 The project follows a basic frontend → REST API → Django backend → PostgreSQL database architecture.
 User
   │
@@ -88,7 +89,7 @@ Django Backend
   │ Django ORM
   ▼
 PostgreSQL Database
-
+```
 🔌 REST API Endpoints
 The project uses Django REST Framework to provide data to the frontend.
 Some of the APIs implemented in the project include:
