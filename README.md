@@ -135,33 +135,26 @@ JavaScript is used for:
 - User interactions
 The Fetch API is used to communicate with the Django REST APIs.
 
-📂 Project Structure
-A simplified structure of the project is:
+## 📁 Project Structure
+
+A simplified structure of the project:
+
+```text
 BookMyShow-Clone/
 │
-├── backend/
-│   ├── manage.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── ...
+├── api/
+│   └── ticketbooking/
 │
-├── frontend/
-│   ├── index.html
-│   ├── css/
-│   │   └── style.css
-│   │
-│   ├── js/
-│   │   └── script.js
-│   │
-│   └── images/
+├── image/
 │
-├── requirements.txt
-├── README.md
-└── .gitignore
-
-Adjust the folder structure above to match your actual GitHub repository.
+├── picture/
+│
+├── index.html
+├── javascripts.js
+├── style.css
+│
+└── README.md
+```
 
 ⚙️ Installation & Setup
 1. Clone the Repository
@@ -261,5 +254,6 @@ Possible future improvements include:
 Parthiban D.
 B.Tech Computer Science and Engineering — 2026
 Chennai, Tamil Nadu
+Linkedin[https://www.linkedin.com/in/parthiban-d-/?isSelfProfile=true]
 Technologies
 Python Django Django REST Framework PostgreSQL JavaScript HTML5 CSS3 Git GitHub Postman
